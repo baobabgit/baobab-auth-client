@@ -1,0 +1,8 @@
+# Matrice de compatibilité inter-librairies
+validated_consumers: []
+# Exemple :
+# - name: baobab-example-consumer
+#   version: v2.0.0
+#   status: PENDING   # PENDING | PASSED | FAILED
+#   integration_method: git_ref
+#   ref: version/v0.1.0

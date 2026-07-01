@@ -5,6 +5,26 @@ Toutes les modifications notables de ce projet sont documentées ici.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.1.0] - 2026-07-01
+
+### Ajouté
+
+- Package `baobab_auth_client` : socle installable v0.1.0.
+- `AuthClientSettings` : configuration injectée via `pydantic-settings`.
+- Modèles publics : `AuthenticatedUser`, `TokenPair`, `TokenClaims`, `AuthHealth`.
+- Hiérarchie d'exceptions avec garde anti-secret.
+- Tests unitaires miroir, tests contractuels `baobab-auth-core`.
+- Documentation : `docs/usage.md`, `docs/configuration.md`, `docs/integration-matrix.md`.
+- ADR-0001 : architecture du socle client v0.1.0.
+
+### Intégration
+
+| Librairie | Version | Statut |
+|---|---:|---|
+| baobab-auth-core | 0.4.1 | GO |
+| baobab-auth-security | 0.4.0 | GO (contrat documenté) |
+| baobab-auth-database | 0.4.0 | GO (absence vérifiée) |
+
 ## [Non publié]
 
 ### Ajouté

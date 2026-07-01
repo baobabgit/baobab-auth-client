@@ -1,9 +1,10 @@
-# Example Package
+# baobab-auth-client
 
-[![Integration](https://github.com/your-org/your-repo/actions/workflows/integration.yml/badge.svg)](https://github.com/your-org/your-repo/actions/workflows/integration.yml)
-[![Release](https://github.com/your-org/your-repo/actions/workflows/release.yml/badge.svg)](https://github.com/your-org/your-repo/actions/workflows/release.yml)
-[![PyPI version](https://img.shields.io/pypi/v/example-package.svg)](https://pypi.org/project/example-package/)
-[![Python versions](https://img.shields.io/pypi/pyversions/example-package.svg)](https://pypi.org/project/example-package/)
+[![CI](https://github.com/baobabgit/baobab-auth-client/actions/workflows/ci.yml/badge.svg)](https://github.com/baobabgit/baobab-auth-client/actions/workflows/ci.yml)
+[![Integration](https://github.com/baobabgit/baobab-auth-client/actions/workflows/integration.yml/badge.svg)](https://github.com/baobabgit/baobab-auth-client/actions/workflows/integration.yml)
+[![Release](https://github.com/baobabgit/baobab-auth-client/actions/workflows/release.yml/badge.svg)](https://github.com/baobabgit/baobab-auth-client/actions/workflows/release.yml)
+[![PyPI version](https://img.shields.io/pypi/v/baobab-auth-client.svg)](https://pypi.org/project/baobab-auth-client/)
+[![Python versions](https://img.shields.io/pypi/pyversions/baobab-auth-client.svg)](https://pypi.org/project/baobab-auth-client/)
 <!-- Badge Read the Docs : à réactiver une fois l'hébergement de doc configuré.
 [![Documentation Status](https://readthedocs.org/projects/your-repo/badge/?version=latest)](https://your-repo.readthedocs.io/en/latest/)
 -->
@@ -12,11 +13,15 @@
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
-> Template de projet Python orienté objet, pensé pour être développé par **plusieurs outils**
-> (Claude Code, Cursor, Codex) qui partagent un **jeu de règles unique** via `AGENTS.md`.
+> Librairie Python cliente d'intégration au service `baobab-auth-api` : configuration,
+> modèles publics, exceptions et helpers RBAC pour les APIs métier consommatrices.
 
-> ℹ️ Remplacez `your-org/your-repo`, `example-package` et le package `example_package`
-> par les valeurs de votre projet (badges, `pyproject.toml`, dossiers `src/` et `tests/`).
+## À propos
+
+`baobab-auth-client` permet à une API métier de sécuriser ses routes sans
+réimplémenter la validation JWT, la récupération JWKS ou les contrôles de rôles
+côté serveur auth. La version `v0.1.0` pose le socle : configuration, modèles,
+exceptions et tests.
 
 ## Table des matières
 
